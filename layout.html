@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d180df3c46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/home/oem/Desktop/kaatru/layout.css">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer-weather-app">
+        <div class="weather-app-left-image-section">
+            <div class="top-icons">
+                <i class="fa-solid fa-square-plus fa-xl" style="color: #ffffff;"></i>
+                <i class="fas fa-ellipsis-h fa-xl" style="color: #ffffff;"></i>
+                <i class="fas fa-toggle-off fa-lg" style="color: #ffffff;"></i>
+            </div>
+            <div class="city-and-temp">
+                <i class="fas fa-location-arrow fa-xl" style="color: #f5f5f5;"></i>
+                <p id="city-name">New York,USA</p><br>
+                <p id="date">Today 7th July</p>
+                <span class="sunrise" style="color: #ffffff;">&#x1F305;</span>
+                <p id="sunrise-time">06:00 AM</p>
+                <span class="sunset" style="color: #ffffff;">🌇</span>
+                <p id="sunset-time">18:30 PM</p>
+            </div>
+            <div class="temperature-in-degree">
+                <div class="left-icon-temperature-in-degree">
+                    <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
+                <p1 style="font-size: 5em; color: white;;">27 &deg</p1>
+                <div class="right-icon-temperature-in-degree">
+                    <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
+                <br>
+                <i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
+                <p1 style="font-size: 2em;color: white;">Sunny</p1>
+            </div>
+            <div class="sunset-img">
+                <img src="https://i.pinimg.com/564x/fa/7a/b2/fa7ab2cd0e6a94ddaf6f5644926b59a9.jpg" alt="" height="500px" width="">
+            </div>
+        </div>
+        <div class="weather-app-right-data-section">
+            <h1 id="welcome-text">Welcome back Toby maguire!</h1>
+            <p id="welcome-text">Check out todays weather information</p>
+            <div class="three-dot-icon-pp">
+                <i class="fa-solid fa-ellipsis fa-xl" style="color: #000000;"></i>
+            </div>
+            <div class="profile-picture">
+                <img id="profile-picture" src="https://i.pinimg.com/736x/43/c2/7e/43c27e9c15e66978fe52379b277ac914.jpg" alt="" height="50px" ;>
+            </div>
+            <div class="outer-box">
+                <div class="inner-box1">
+                    <div class="text-field">
+                        <p id="hour-text">Upcoming Hours</p>
+                        <p id="rain-text">Rain percipation</p>
+                        <div class="rain-text-down-icon">
+                            <i class="fa-solid fa-chevron-down" style="color: #203455;"></i></div>
+                        <p id="day-text">Next days</p>
+
+                    </div>
+                    <div class="inner-box1-top-icon">
+                        
+                    </div>
+                        <canvas id="line-chart"></canvas>
+
+                </div>
+                <div class="inner-box2">
+                    <p id="humidity">Humidity</p>
+                    <div class="humidity-icon">
+                        <i class="fa-solid fa-droplet fa-xl"></i>
+                    </div>
+                    <div class="humidity-icon-text">
+                        <div class="percentage">
+                            <p>82%</p>
+                        </div>
+                        <div class="rate">
+                            <p>bad</p>
+                        </div>
+                    </div>
+                    <!-- <div class="humidity-main-top-icon">
+                         <i class="fa-solid fa-turn-up"></i> 
+                    </div>
+                        <p id="good">Good</p>
+
+                    <div class="humidity-main-down-icon">
+                         <i class="fa-solid fa-turn-down"></i> 
+                     <p id="bad">poor</p> 
+                    </div> -->
+                </div>
+                <div class="inner-box3">
+                    <p id="wind">Wind</p>
+                    <div class="wind-icon">
+                        <i class="fa-solid fa-wind fa-2xl"></i></div>
+                    <div class="wind-speedometer-icon">
+                        <i class="fa-solid fa-gauge fa-5x"></i>
+                        <p id="speed" style="font-size:2em"> 8km/hr</p>
+                    </div>
+                </div>
+                <div class="inner-box4">
+                    <p id="perci">perci</p>
+                    <div class="perci-icon">
+                        <i class="fa-solid fa-cloud-rain fa-2xl"></i></div>
+                    <p id="perci-text" style="font-size:2em">1.4CM</p>
+                </div>
+                <div class="inner-box5">
+                    <p id="uv">UV</p>
+                    <div class="uv-icon">
+                        <i class="fa-solid fa-sun fa-2xl"></i></div>
+                    <p id="uv-text" style="font-size:2em">4 medium</p>
+                </div>
+                <div class="inner-box6">
+                    <p id="feel">Feel</p>
+                    <div class="feel-icon">
+                        <i class="fa-solid fa-temperature-quarter fa-2xl"></i></div>
+                    <p id="feel-text" style="font-size: 2em;">30&deg</p>
+                </div>
+                <div class="inner-box7">
+                    <p id="rain">Rain</p>
+                    <div class="rain-icon">
+                        <i class="fa-solid fa-umbrella fa-2xl"></i></div>
+                    <p id="rain-icon-text" style="font-size:2em;">42%</p>
+                </div>
+            </div>
+        </div>
+    
+</body>
+<script src="/home/oem/Desktop/kaatru/script.js">
+    
+</script>
+
+</html>

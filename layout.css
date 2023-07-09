@@ -1,0 +1,345 @@
+ @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300&display=swap');
+
+ body {
+     margin: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+ }
+
+ .outer-weather-app {
+     display: flex;
+     flex-direction: row;
+
+
+ }
+
+ .weather-app-left-image-section {
+     background-color: #010100;
+     flex-grow: 0;
+     height: auto;
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+   }
+
+ .top-icons {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top: 20px;
+ }
+
+
+
+ .weather-app-right-data-section {
+     
+     background-color: #C4AE78;
+     flex-grow: 4
+ }
+
+ .sunset-img {
+    
+     margin-top: 5px;
+     max-height: 500px;
+     max-width: 250px;
+     margin-left: 10px;
+
+
+ }
+
+ .temperature-in-degree {
+     text-align: center;
+     margin-top: 40px;
+     font-family: 'Agdasima', sans-serif;
+ }
+
+ .city-and-temp {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ #city-name {
+     color: white;
+     position: relative;
+     left: 20px;
+     top: -20px;
+     font-size: 1em;
+     font-family: Montserrat;
+ }
+
+ #date {
+     color: white;
+     position: relative;
+     left: -80px;
+     top: 10px;
+     font-size: 0.9em;
+     font-family: 'Heebo', sans-serif;
+ }
+
+ .sunrise {
+     position: relative;
+     left: -10px;
+     top: -5px;
+ }
+
+ #sunrise-time {
+     color: white;
+     position: relative;
+     left: 10px;
+     top: -20px;
+     font-size: 1em;
+     font-family: 'Heebo', sans-serif;
+ }
+
+ .sunset {
+     position: relative;
+     left: -97px;
+     top: 30px;
+ }
+
+ #sunset-time {
+     color: white;
+     position: relative;
+     left: -80px;
+     top: 15px;
+     font-family: 'Heebo', sans-serif;
+ }
+
+ .left-icon-temperature-in-degree {
+     position: relative;
+     top: 55px;
+     left: -130px;
+ }
+
+ .right-icon-temperature-in-degree {
+     position: relative;
+     top: -55px;
+     right: -100px;
+ }
+
+ /* right side*/
+ #welcome-text {
+     font-size: 1.5em;
+     margin-left: 50px;
+
+ }
+
+ .profile-picture {
+     margin-left: 840px;
+     margin-top: -100px;
+
+ }
+
+ #profile-picture {
+     border-radius: 100px;
+ }
+
+ .three-dot-icon-pp {
+     position: relative;
+     top: -60px;
+     left: 800px;
+ }
+
+ /*
+*/
+ .outer-box {
+     display: grid;
+     margin: 30px;
+     margin-top: 40px;
+     grid-template-areas: "graph graph graph""humidity wind perci""uv feel rain";
+     grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .outer-box>div {
+     padding: 10px;
+     margin: 10px;
+     border-radius: 20px;
+ }
+
+ .inner-box1 {
+     grid-area: graph;
+     background-color: white;
+     max-height: 250px;
+
+ }
+
+ .text-field {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #rain-text {
+     position: relative;
+     left: 200px;
+     background-color: #dce0e1;
+     border: 1px solid #dce0e1;
+     border-radius: 5px;
+ }
+
+ .rain-text-down-icon {
+     position: relative;
+     top: 20px;
+     left: 25px;
+     background-color: ;
+ }
+
+ #day-text {
+     background-color: #dce0e1;
+     border: 1px solid #dce0e1;
+     border-radius: 5px;
+ }
+
+ .inner-box2 {
+     height: 200px;
+     grid-area: humidity;
+     background-color: white;
+ }
+
+ .humidity-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+ }
+
+ .humidity-icon-text {
+     position: relative;
+     margin-top: -10px;
+     text-align: center;
+ }
+
+ .humidity-icon-text {
+     top: 10px;
+     left: 70px;
+     text-align: center;
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     font-size: 2em;
+
+ }
+
+ .humidity-main-top-icon {
+     position: relative;
+     top: -50px;
+     text-align: ;
+ }
+
+ #good {
+     position: relative;
+     top: 140px;
+     left: -200px;
+ }
+
+ .humidity-main-down-icon {
+     position: relative;
+     top: 55px;
+     left: 100px;
+ }
+
+
+ .inner-box3 {
+     grid-area: wind;
+     height: 200px;
+     background-color: white;
+
+
+ }
+
+ #speed {
+     position: relative;
+     top: -90px;
+     left: 90px;
+ }
+
+ .wind-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+
+ }
+
+ .inner-box4 {
+     grid-area: perci;
+     height: 200px;
+     background-color: white;
+
+
+ }
+
+ .perci-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+
+ }
+
+ #perci-text {
+     position: relative;
+     left: 90px;
+ }
+
+ .inner-box5 {
+     grid-area: uv;
+     height: 200px;
+     background-color: white;
+
+
+ }
+
+ .uv-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+ }
+
+ #uv-text {
+     position: relative;
+     left: 50px;
+ }
+
+ .inner-box6 {
+     grid-area: feel;
+     height: 200px;
+     background-color: white;
+
+
+ }
+
+ .feel-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+ }
+
+ #feel-text {
+     position: relative;
+     left: 110px;
+ }
+
+ .inner-box7 {
+     grid-area: rain;
+     height: 200px;
+     background-color: white;
+
+
+ }
+
+ .rain-icon {
+     position: relative;
+     top: -30px;
+     left: 220px;
+ }
+
+ #rain-icon-text {
+     position: relative;
+     left: 100px;
+ }
+
+ #line-chart {
+     max-height: 200px;
+     padding-top: 50px;
+ }
